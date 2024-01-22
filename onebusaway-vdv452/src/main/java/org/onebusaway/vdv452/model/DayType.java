@@ -19,15 +19,15 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.VersionedIdFieldMappingFactory;
 
-@CsvFields(filename = "MENGE_TAGESART.x10")
+@CsvFields(filename = "DAY_TYPE.x10")
 public class DayType extends IdentityBean<VersionedId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "TAGESART_NR", mapping = VersionedIdFieldMappingFactory.class)
+  @CsvField(name = "DAY_TYPE_NO", mapping = VersionedIdFieldMappingFactory.class)
   private VersionedId id;
 
-  @CsvField(name = "TAGESART_TEXT", optional = true)
+  @CsvField(name = "DAY_TYPE_DESC", optional = true)
   private String desc;
 
   @Override

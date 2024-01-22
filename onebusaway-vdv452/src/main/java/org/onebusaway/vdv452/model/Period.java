@@ -20,16 +20,16 @@ import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.EntityFieldMappingFactory;
 import org.onebusaway.vdv452.serialization.ServiceDateFieldMappingFactory;
 
-@CsvFields(filename = "FIRMENKALENDER.x10")
+@CsvFields(filename = "PERIOD.x10")
 public class Period {
 
-  @CsvField(name = "BETRIEBSTAG", mapping = ServiceDateFieldMappingFactory.class)
+  @CsvField(name = "OPERATING_DAY", mapping = ServiceDateFieldMappingFactory.class)
   private ServiceDate date;
 
-  @CsvField(name = "TAGESART_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "DAY_TYPE_NO", mapping = EntityFieldMappingFactory.class)
   private DayType dayType;
 
-  @CsvField(name = "BETRIEBSTAG_TEXT", optional = true)
+  @CsvField(name = "OPERATING_DAY_DESC", optional = true)
   private String desc;
 
   public ServiceDate getDate() {

@@ -19,18 +19,18 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.LineIdFieldMappingFactory;
 
-@CsvFields(filename = "REC_LID.x10")
+@CsvFields(filename = "LINE.x10")
 public class Line extends IdentityBean<LineId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "LI_NR", mapping = LineIdFieldMappingFactory.class)
+  @CsvField(name = "LINE_NO", mapping = LineIdFieldMappingFactory.class)
   private LineId id;
 
-  @CsvField(name = "LI_KUERZEL")
+  @CsvField(name = "LINE_ABBR")
   private String shortName;
 
-  @CsvField(name = "LIDNAME", optional = true)
+  @CsvField(name = "LINE_DESC", optional = true)
   private String longName;
 
   @Override

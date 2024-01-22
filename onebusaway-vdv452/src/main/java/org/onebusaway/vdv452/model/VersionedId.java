@@ -19,7 +19,7 @@ import java.io.Serializable;
 
 public class VersionedId implements Serializable {
 
-  public static final String BASIS_VERSION_FIELD = "BASIS_VERSION";
+  public static final String BASIS_VERSION_FIELD = "BASE_VERSION";
 
   private static final long serialVersionUID = 1L;
 

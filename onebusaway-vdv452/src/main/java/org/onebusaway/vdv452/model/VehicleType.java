@@ -19,30 +19,30 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.VersionedIdFieldMappingFactory;
 
-@CsvFields(filename = "MENGE_FZG_TYP.x10")
+@CsvFields(filename = "VEHICLE_TYPE.x10")
 public class VehicleType extends IdentityBean<VersionedId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "FZG_TYP_NR", mapping = VersionedIdFieldMappingFactory.class)
+  @CsvField(name = "VEHICLE_TYPE", mapping = VersionedIdFieldMappingFactory.class)
   private VersionedId id;
 
-  @CsvField(name = "FZG_LAENGE")
+  @CsvField(name = "VH_TYPE_LENGTH")
   private int length;
 
-  @CsvField(name = "FZG_TYP_SITZ")
+  @CsvField(name = "VH_TYPE_SEAT")
   private int seatingCapacity;
 
-  @CsvField(name = "FZG_TYP_STEH")
+  @CsvField(name = "VH_TYPE_STAND")
   private int standingCapacity;
 
-  @CsvField(name = "SONDER_PLATZ")
+  @CsvField(name = "VH_TYPE_SPEC_SEAT")
   private int accessibleCapacity;
 
-  @CsvField(name = "FZG_TYP_TEXT")
+  @CsvField(name = "VH_TYPE_DESC")
   private String name;
 
-  @CsvField(name = "STR_FZG_TYP")
+  @CsvField(name = "VH_TYPE_ABBR")
   private String abreviatedName;
 
   @Override

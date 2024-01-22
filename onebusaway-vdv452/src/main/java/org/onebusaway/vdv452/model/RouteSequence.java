@@ -23,16 +23,16 @@ import org.onebusaway.vdv452.serialization.EntityFieldMappingFactory;
  * Describes a single entry in an ordered sequence of {@link StopPoint}
  * associated with a {@link Link}.
  */
-@CsvFields(filename = "LID_VERLAUF.x10")
+@CsvFields(filename = "ROUTE_SEQUENCE.x10")
 public class RouteSequence implements Comparable<RouteSequence> {
 
-  @CsvField(name = "STR_LI_VAR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "ROUTE_ABBR", mapping = EntityFieldMappingFactory.class)
   private Line line;
 
-  @CsvField(name = "LI_LFD_NR")
+  @CsvField(name = "SEQUENCE_NO")
   private int sequence;
 
-  @CsvField(name = "ORT_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "POINT_NO", mapping = EntityFieldMappingFactory.class)
   private StopPoint stop;
 
   public Line getLine() {

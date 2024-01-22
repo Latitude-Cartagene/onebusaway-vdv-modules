@@ -17,7 +17,7 @@ package org.onebusaway.vdv452.model;
 
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 
-@CsvFields(filename = "REC_SEL.x10")
+@CsvFields(filename = "LINK.x10")
 public class Link {
 
 }

@@ -19,18 +19,18 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.VersionedIdFieldMappingFactory;
 
-@CsvFields(filename = "ZUL_VERKEHRSBETRIEB.x10")
+@CsvFields(filename = "TRANSPORT_COMPANY.x10")
 public class TransportCompany extends IdentityBean<VersionedId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "UNTERNEHMEN", mapping = VersionedIdFieldMappingFactory.class)
+  @CsvField(name = "COMPANY", mapping = VersionedIdFieldMappingFactory.class)
   private VersionedId id;
 
-  @CsvField(name = "ABK_UNTERNEHMEN")
+  @CsvField(name = "COMPANY_ABBR")
   private String name;
 
-  @CsvField(name = "BETRIEBSGEBIET_BEZ", optional = true)
+  @CsvField(name = "BUSINESS_AREA_DESC", optional = true)
   private String operatingArea;
 
   @Override

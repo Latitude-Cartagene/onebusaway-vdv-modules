@@ -19,16 +19,16 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.EntityFieldMappingFactory;
 
-@CsvFields(filename = "REC_UMLAUF.x10")
+@CsvFields(filename = "BLOCK.x10")
 public class Block {
 
-  @CsvField(name = "ANF_ORT", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "FROM_POINT_NO", mapping = EntityFieldMappingFactory.class)
   private StopPoint startPoint;
 
-  @CsvField(name = "END_ORT", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "TO_POINT_NO", mapping = EntityFieldMappingFactory.class)
   private StopPoint endPoint;
 
-  @CsvField(name = "FZG_TYP_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "VH_TYPE_NO", mapping = EntityFieldMappingFactory.class)
   private VehicleType vehicleType;
 
   public StopPoint getStartPoint() {

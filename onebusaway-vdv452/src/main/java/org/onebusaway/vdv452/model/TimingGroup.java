@@ -19,15 +19,15 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.VersionedIdFieldMappingFactory;
 
-@CsvFields(filename = "MENGE_FGR.x10")
+@CsvFields(filename = "TIMING_GROUP.x10")
 public class TimingGroup extends IdentityBean<VersionedId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "FGR_NR", mapping = VersionedIdFieldMappingFactory.class)
+  @CsvField(name = "TIMING_GROUP_NO", mapping = VersionedIdFieldMappingFactory.class)
   private VersionedId id;
 
-  @CsvField(name = "FGR_TEXT")
+  @CsvField(name = "TIMING_GROUP_DESC")
   private String desc;
 
   @Override

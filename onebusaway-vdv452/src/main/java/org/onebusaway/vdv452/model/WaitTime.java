@@ -19,16 +19,16 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.EntityFieldMappingFactory;
 
-@CsvFields(filename = "ORT_HZTF.x10")
+@CsvFields(filename = "WAIT_TIME.x10")
 public class WaitTime {
 
-  @CsvField(name = "FGR_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "TIMING_GROUP_NO", mapping = EntityFieldMappingFactory.class)
   private TimingGroup timingGroup;
 
-  @CsvField(name = "ORT_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "POINT_NO", mapping = EntityFieldMappingFactory.class)
   private StopPoint stop;
 
-  @CsvField(name = "HP_HZT")
+  @CsvField(name = "WAIT_TIME")
   private int waitTime;
 
   public TimingGroup getTimingGroup() {

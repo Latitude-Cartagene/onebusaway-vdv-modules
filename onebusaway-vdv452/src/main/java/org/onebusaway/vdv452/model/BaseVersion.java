@@ -18,15 +18,15 @@ package org.onebusaway.vdv452.model;
 import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 
-@CsvFields(filename = "MENGE_BASIS_VERSIONEN.x10")
+@CsvFields(filename = "BASE_VERSION.x10")
 public class BaseVersion extends IdentityBean<Integer> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "BASIS_VERSION")
+  @CsvField(name = "BASE_VERSION")
   private int id;
 
-  @CsvField(name = "BASIS_VERSION_TEXT", optional = true)
+  @CsvField(name = "BASE_VERSION_DESC", optional = true)
   private String desc;
 
   @Override

@@ -20,21 +20,21 @@ import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.DegressMinutesSecondsFieldMappingFactory;
 import org.onebusaway.vdv452.serialization.StopIdFieldMappingFactory;
 
-@CsvFields(filename = "REC_ORT.x10")
+@CsvFields(filename = "STOP.x10")
 public class Stop extends IdentityBean<StopId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "ORT_NR", mapping = StopIdFieldMappingFactory.class)
+  @CsvField(name = "POINT_NO", mapping = StopIdFieldMappingFactory.class)
   private StopId id;
 
-  @CsvField(name = "ORT_NAME")
+  @CsvField(name = "POINT_DESC")
   private String name;
 
-  @CsvField(name = "ORT_POS_BREITE", mapping=DegressMinutesSecondsFieldMappingFactory.class)
+  @CsvField(name = "POINT_LATTITUDE", mapping=DegressMinutesSecondsFieldMappingFactory.class)
   private double lat;
 
-  @CsvField(name = "ORT_POS_LAENGE", mapping=DegressMinutesSecondsFieldMappingFactory.class)
+  @CsvField(name = "POINT_LONGITUDE", mapping=DegressMinutesSecondsFieldMappingFactory.class)
   private double lng;
 
   @Override

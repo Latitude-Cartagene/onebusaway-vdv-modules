@@ -20,24 +20,24 @@ import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.EntityFieldMappingFactory;
 import org.onebusaway.vdv452.serialization.VersionedIdFieldMappingFactory;
 
-@CsvFields(filename = "REC_FRT.x10")
+@CsvFields(filename = "JOURNEY.x10")
 public class Journey extends IdentityBean<VersionedId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "FRT_FID", mapping = VersionedIdFieldMappingFactory.class)
+  @CsvField(name = "JOURNEY_NO", mapping = VersionedIdFieldMappingFactory.class)
   private VersionedId id;
 
-  @CsvField(name = "LI_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "LINE_NO", mapping = EntityFieldMappingFactory.class)
   private Line line;
 
-  @CsvField(name = "FRT_START")
+  @CsvField(name = "DEPARTURE_TIME")
   private int departureTime;
 
-  @CsvField(name = "FGR_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "TIMING_GROUP_N", mapping = EntityFieldMappingFactory.class)
   private TimingGroup timingGroup;
   
-  @CsvField(name = "TAGESART_NR", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "DAY_TYPE_NO", mapping = EntityFieldMappingFactory.class)
   private DayType dayType;
 
   @Override

@@ -19,12 +19,12 @@ import org.onebusaway.csv_entities.schema.annotations.CsvField;
 import org.onebusaway.csv_entities.schema.annotations.CsvFields;
 import org.onebusaway.vdv452.serialization.StopIdFieldMappingFactory;
 
-@CsvFields(filename = "REC_HP.x10")
+@CsvFields(filename = "STOP_POINT.x10")
 public class StopPoint extends IdentityBean<StopId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "ORT_NR", mapping = StopIdFieldMappingFactory.class)
+  @CsvField(name = "POINT_NO", mapping = StopIdFieldMappingFactory.class)
   private StopId id;
 
   @Override
