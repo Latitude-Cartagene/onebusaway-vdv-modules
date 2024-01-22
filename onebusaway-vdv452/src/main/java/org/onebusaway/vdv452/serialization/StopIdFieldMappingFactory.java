@@ -29,7 +29,7 @@ import org.onebusaway.vdv452.model.VersionedId;
 
 public class StopIdFieldMappingFactory implements FieldMappingFactory {
 
-  public static final String STOP_TYPE_FIELD = "ONR_TYP_NR";
+  public static final String STOP_TYPE_FIELD = "POINT_TYPE";
 
   @Override
   public FieldMapping createFieldMapping(EntitySchemaFactory schemaFactory,

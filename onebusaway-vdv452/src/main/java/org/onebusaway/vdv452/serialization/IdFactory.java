@@ -48,21 +48,21 @@ public class IdFactory {
       String csvFieldName) {
     String versionString = (String) csvValues.get(VersionedId.BASIS_VERSION_FIELD);
     long version = Long.parseLong(versionString);
-    String lineIdString = (String) csvValues.get("LI_NR");
+    String lineIdString = (String) csvValues.get("LINE_NO");
     long lineId = Long.parseLong(lineIdString);
-    String lineVariation = (String) csvValues.get("STR_LI_VAR");
+    String lineVariation = (String) csvValues.get("ROUTE_ABBR");
     return new LineId(version, lineId, lineVariation);
   }
 
   private static String getStopTypeFieldName(String csvFieldName) {
-    if (csvFieldName.equals("ORT_NR")) {
-      return "ONR_TYP_NR";
-    } else if (csvFieldName.equals("SEL_ZIEL")) {
-      return "SEL_ZIEL_TYP";
-    } else if (csvFieldName.equals("ANF_ORT")) {
-      return "ANF_ONR_TYP";
-    } else if (csvFieldName.equals("END_ORT")) {
-      return "END_ONR_TYP";
+    if (csvFieldName.equals("POINT_NO")) {
+      return "POINT_TYPE";
+    } else if (csvFieldName.equals("TO_POINT_NO")) {
+      return "TO_POINT_TYPE";
+    } else if (csvFieldName.equals("FROM_POINT_NO")) {
+      return "FROM_POINT_TYPE";
+    } else if (csvFieldName.equals("TO_POINT_NO")) {
+      return "TO_POINT_TYPE";
     }
     throw new IllegalStateException("Unknown stop point id field: "
         + csvFieldName);
