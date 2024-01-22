@@ -34,7 +34,7 @@ public class Journey extends IdentityBean<VersionedId> {
   @CsvField(name = "DEPARTURE_TIME")
   private int departureTime;
 
-  @CsvField(name = "TIMING_GROUP_N", mapping = EntityFieldMappingFactory.class)
+  @CsvField(name = "TIMING_GROUP_NO", mapping = EntityFieldMappingFactory.class)
   private TimingGroup timingGroup;
   
   @CsvField(name = "DAY_TYPE_NO", mapping = EntityFieldMappingFactory.class)

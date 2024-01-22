@@ -38,6 +38,7 @@ public class Vdv452ToGtfsConverterMain {
   private Options _options = new Options();
 
   public static void main(String[] args) {
+    System.err.println("English version");
     Vdv452ToGtfsConverterMain m = new Vdv452ToGtfsConverterMain();
     m.run(args);
   }

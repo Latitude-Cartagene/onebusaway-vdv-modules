@@ -24,7 +24,7 @@ public class VehicleType extends IdentityBean<VersionedId> {
 
   private static final long serialVersionUID = 1L;
 
-  @CsvField(name = "VEHICLE_TYPE", mapping = VersionedIdFieldMappingFactory.class)
+  @CsvField(name = "VH_TYPE_NO", mapping = VersionedIdFieldMappingFactory.class)
   private VersionedId id;
 
   @CsvField(name = "VH_TYPE_LENGTH")
