@@ -71,6 +71,7 @@ public class Vdv452ToGtfsFactory {
       trip.setId(id);
       trip.setRoute(getRouteForLine(journey.getLine()));
       trip.setServiceId(createCalendarEntriesForDayType(journey.getDayType()));
+      trip.setDirectionId(journey.getLine().getDirection() == 1 ? "0" : "1");
       getStopTimesForJourney(journey, trip);
       _out.saveEntity(trip);
     }

@@ -33,6 +33,9 @@ public class Line extends IdentityBean<LineId> {
   @CsvField(name = "LINE_DESC", optional = true)
   private String longName;
 
+  @CsvField(name = "DIRECTION", optional = true)
+  private int direction;
+
   @Override
   public LineId getId() {
     return id;
@@ -57,5 +60,13 @@ public class Line extends IdentityBean<LineId> {
 
   public void setLongName(String longName) {
     this.longName = longName;
+  }
+
+  public int getDirection() {
+    return direction;
+  }
+
+  public void setDirection(int direction) {
+    this.direction = direction;
   }
 }
