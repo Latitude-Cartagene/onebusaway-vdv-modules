@@ -168,8 +168,8 @@ public class Vdv452ToGtfsFactory {
         return null;
       }
       gtfsStop.setName(vdvStop.getName());
-      gtfsStop.setLat(vdvStop.getLat());
-      gtfsStop.setLon(vdvStop.getLng());
+      gtfsStop.setLat(vdvStop.getLat() / 10);
+      gtfsStop.setLon(vdvStop.getLng() / 10);
       _out.saveEntity(gtfsStop);
     }
     return gtfsStop;
