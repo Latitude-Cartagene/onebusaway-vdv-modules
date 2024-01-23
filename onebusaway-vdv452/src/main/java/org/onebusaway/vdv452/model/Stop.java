@@ -28,7 +28,7 @@ public class Stop extends IdentityBean<StopId> {
   @CsvField(name = "POINT_NO", mapping = StopIdFieldMappingFactory.class)
   private StopId id;
 
-  @CsvField(name = "POINT_DESC")
+  @CsvField(name = "STOP_SHORT_NAME")
   private String name;
 
   @CsvField(name = "POINT_LATITUDE", mapping=DegressMinutesSecondsFieldMappingFactory.class)
